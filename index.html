@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,27 +8,68 @@
   
   <title>Frontend Mentor | Social links profile</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .flexcenter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height:100svh;
+    }
+    .greybox {
+      background-color: hsl(0, 0%, 12%);
+      border-radius:10px;
+      padding:24px;
+      max-width: 340px;
+      width:95%;
+      display:flex 1;
+      justify-content:center;
+      align-items:center;
+      text-align: center;
+      line-height: 200%;
+    }
+    .profilepic {
+      width:80px;
+      border-radius: 100px;
+      margin:20px;
+    }
+    .socialLink {
+      background-color:hsl(0, 0%, 20%);
+      border-radius:10px;
+      border-color:hsl(0, 0%, 20%);
+      width:100%;
+      padding:12px;
+      color:white;
+      font-weight: 700;
+      margin-top:12px;
+      font-size:0.95rem;
+    }
+    .socialLink:hover {
+      background-color:hsl(75, 94%, 57%);
+      color:black;
+    }
   </style>
 </head>
-<body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
+<body style="background-color: hsl(0, 0%, 8%); font-family: 'Inter'; font-size:18px;">
+  <section class="flexcenter">
+    <main class="greybox">
+      <img src='assets/images/avatar-jessica.jpeg' class="profilepic"></img>  
+      <figcaption style="color: white; font-weight: 600; font-size:1.5rem">Jessica Randall</figcaption>
+      <section style="color: hsl(75, 94%, 57%); font-weight:600; font-size:0.9rem;">London, United Kingdom</section>
+      <section style="color: white; font-weight:400; font-size:0.8rem;">"Front-end developer and avid reader."</section>
+      <button class="socialLink">GitHub</button>
+      <button class="socialLink">Frontend Mentor</button>
+      <button class="socialLink">LinkedIn</button>
+      <button class="socialLink">Twitter</button>
+      <button class="socialLink" style="margin-bottom:12px">Instagram</button>
+    </main>
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/matiasmonzonrubano1-beep">Matias Monzon Rubano</a>.
   </div>
 </body>
 </html>
